@@ -301,6 +301,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 table {
@@ -10948,7 +10949,7 @@ textarea.form-control-lg {
     text-align: center;
     border-radius: 50%;
     background-color: #f9e6d4;
-    color: #fba543;
+    color: #67884F;
     font-size: 14px;
     -webkit-transition: all all 0.5s ease-out 0s;
     -moz-transition: all all 0.5s ease-out 0s;
@@ -10973,7 +10974,7 @@ textarea.form-control-lg {
 }
 .deneb_footer .widget_wrapper .widget_link ul li a:hover,
 .deneb_footer .widget_wrapper .widget_link ul li a:focus {
-    color: #feb000;
+    color: #67884F;
 }
 .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
     max-width: 250px;
@@ -10983,28 +10984,28 @@ textarea.form-control-lg {
 }
 .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .icon {
     font-size: 12px;
-    color: #feb000;
+    color: #67884F;
     margin-right: 10px;
 }
 .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p a {
-    color: #7a808d;
+    color: #67884F;
 }
 .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p span {
     display: block;
 }
 
 .deneb_footer .copyright_area {
-    background: #edecf0;
+    background: #073821;
     padding: 10px 0;
 }
 .deneb_footer .copyright_area .copyright_text {
     text-align: center;
 }
 .deneb_footer .copyright_area .copyright_text p {
-    color: #011a3e;
+    color: #fff;
 }
 .deneb_footer .copyright_area .copyright_text p span {
-    color: #feb000;
+    color: #073821;
 }
 .deneb_cta .cta_wrapper {
     padding: 45px 50px 42px;
@@ -11014,9 +11015,9 @@ textarea.form-control-lg {
     margin-bottom: -135px;
     position: relative;
     background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    background-image: -webkit-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    background-image: -webkit-linear-gradient(0deg, #0A3B2C 0%, #A3A88B 100%);
     background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+    box-shadow: 2.5px 4.33px 15px 0px #babbbc;
     z-index: 1;
 }
 .deneb_cta .cta_wrapper:after {
@@ -11069,10 +11070,60 @@ textarea.form-control-lg {
     }
 }
 .deneb_cta .cta_wrapper .button_box .deneb_btn {
-    background: #fff;
-    color: #011a3e;
+    background: #000;
+    color: #fff;
 }
-.deneb_cta .cta_wrapper .button_box .deneb_btn:hover,
+.deneb_cta .cta_wrapper .button_box .deneb_btn:hover
 .deneb_cta .cta_wrapper .button_box .deneb_btn:focus {
     box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*--------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
+.gr-1{
+  background: linear-gradient(170deg, #f2e7c3 0%, #fff 100%);
+}
+
+.gr-2{
+  background: linear-gradient(170deg, #f2e7c3 0%, #fff 100%);
+}
+.gr-3{
+  background: linear-gradient(170deg, #f2e7c3 0%, #fff 100%);
+}
+
+
+
+.columnService{
+  margin-top:3rem;
+  padding-left:3rem;
+}
+
+.cardService{
+  min-height:170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color:rgba(0,0,0,1);
+  letter-spacing: .05rem;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 0 0 21px rgba(0,0,0,.27);
+}
+
+  
+
+.ico-card{
+    position:absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
