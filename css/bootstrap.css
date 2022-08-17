@@ -11115,15 +11115,112 @@ textarea.form-control-lg {
   box-shadow: 0 0 21px rgba(0,0,0,.27);
 }
 
-  
+.border {
+    
+  background-color: #D2E0C8;
 
-.ico-card{
-    position:absolute;
-    top: 0;
-    left:0;
-    bottom:0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
+
+.titulo_header {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+}
+
+.texto1 {
+  font-weight: bolder;
+  font-size: 5vw;
+  padding: 0px 10px 0px 50px;
+  color: #203C2E;
+}
+
+.texto2{
+  font-size: 5vw;
+  padding: 0px 20px 0px 40px;
+  color: #203C2E;
+
+}
+
+.texto2:hover{
+  background-color: coral;
+}
+
+/***************ANIMACIONES_INDEX*******************************/
+
+.anima {
+  animation-name: animacion;
+  animation-duration: 5s;
+  animation-iteration-count: inherit;
+}
+
+@keyframes animacion{
+  0% {
+      transform: translateX(1000px);
+  }/**estilos**/
+  40% {
+      transform: translateX(500px);
+      transform: rotate(90deg);
+      background-color: rgb(194, 203, 203);
+  }
+  100%{
+      transform: translateX(0); 
+      background-color: rgb(190, 205, 193);
+  }
+}
+
+/***************ANIMACIONES_INDEX*******************************/
+.imagesobre {
+  width: 50vw;
+  height: fit-content;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.animaimageBottom {
+  animation-name: animaimageBottom;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animaimageBottom{
+  0% {
+      transform: translateY(100px);
+  }/**estilos**/
+  
+  100%{
+      transform: translateX(0); 
+      transform: skew(30px);
+  }
+}
+
+.parrafoSobre {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.titleSobre {
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/***************Contacto*******************************/
+
+.header {
+  color: #157347;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35px;
+  color: #157347;
+}
+
