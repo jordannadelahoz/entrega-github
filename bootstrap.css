@@ -11127,3 +11127,8 @@ textarea.form-control-lg {
     height: 100%;
     overflow: hidden;
 }
+
+
+#titleSobre{
+  background-image: linear-gradient(180deg, #070000, #889300)
+}
