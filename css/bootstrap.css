@@ -11124,27 +11124,71 @@ textarea.form-control-lg {
 .titulo_header {
   display: flex;
   justify-content: space-around;
-  position: absolute;
-  top: 40%;
+  position:absolute;
+  top: 15%;
 }
+
 
 .texto1 {
   font-weight: bolder;
   font-size: 5vw;
-  padding: 0px 10px 0px 50px;
+  padding: 0px 10px 0px 40px;
+  margin-left: 100px;
+  background-color:rgba(220, 53, 69, 0.25)
   color: #203C2E;
 }
 
 .texto2{
   font-size: 5vw;
   padding: 0px 20px 0px 40px;
+  background-color: coral;
   color: #203C2E;
 
 }
 
-.texto2:hover{
-  background-color: coral;
+.texto1:hover{
+  background-color: #ffc720; 
 }
+
+.texto2:hover{
+  background-color: violet;
+}
+
+
+
+/***************ANIMACIONES_INDEX*******************************/
+.animaTexto1 {
+  animation-name: animaTexto1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animaTexto1{
+  0% {
+      transform: translateX(0px);
+  }/**estilos**/
+  100%{
+      transform: translateX(400px); 
+      background-color: rgb(190, 205, 193);
+  }
+}
+
+.animaTexto2 {
+  animation-name: animaTexto2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animaTexto2{
+  0% {
+      transform: translateX(0px);
+  }/**estilos**/
+  100%{
+      transform: translateX(600px); 
+      background-color: rgb(190, 205, 193);
+  }
+}
+
 
 /***************ANIMACIONES_INDEX*******************************/
 
@@ -11224,3 +11268,17 @@ textarea.form-control-lg {
   color: #157347;
 }
 
+.cartita {
+
+}
+.cartita:hover {
+  transform: scale(110%);
+}
+
+.titulito {
+
+}
+
+.titulito:hover{
+  transform: scale(120%);
+}
