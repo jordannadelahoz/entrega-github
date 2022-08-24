@@ -1,0 +1,234 @@
+@import "variables";
+@import "componentes";
+
+
+.border {
+    
+    background-color: #D2E0C8;
+  
+  }
+  
+  .titulo_header {
+    display: inline-flex;
+    justify-content: space-around;
+    position:absolute;
+    top: 15%;
+    left: 5%;
+    padding-right: 100px;
+  }
+  
+  
+  .texto1 {
+    font-weight: bolder;
+    font-size: 5vw;
+    padding: 0px 10px 0px 40px;
+    margin-left: 100px;
+    background-color:rgba(220, 53, 69, 0.25);
+    color: #203C2E;
+  }
+  
+  .texto2{
+    font-size: 5vw;
+    padding: 0px 20px 0px 40px;
+    background-color: coral;
+    color: #203C2E;
+  
+  }
+  
+  .texto1:hover{
+    background-color: #ffc720; 
+  }
+  
+  .texto2:hover{
+    background-color: violet;
+  }
+  
+  
+  
+  /***************ANIMACIONES_INDEX*******************************/
+  .animaTexto1 {
+    animation-name: animaTexto1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animaTexto1{
+    0% {
+        transform: translateX(0px);
+    }/**estilos**/
+    100%{
+        transform: translateX(20px); 
+        background-color: rgb(190, 205, 193);
+    }
+  }
+  
+  .animaTexto2 {
+    animation-name: animaTexto2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animaTexto2{
+    0% {
+        transform: translateX(0px);
+    }/**estilos**/
+    100%{
+        transform: translateX(30px); 
+        background-color: rgb(190, 205, 193);
+    }
+  }
+  
+  /***************MEDIA QUERIES*********/
+  @media (min-width: 1px) and (max-width: 600px) { 
+
+    @keyframes animaTexto1{
+      0% {
+          transform: translateX(0px);
+      }/**estilos**/
+      100%{
+          transform: translateX(10px); 
+          background-color: rgb(190, 205, 193);
+      }
+    }
+    
+    .animaTexto2 {
+      animation-name: animaTexto2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes animaTexto2{
+      0% {
+          transform: translateX(0px);
+      }/**estilos**/
+      100%{
+          transform: translateX(20px); 
+          background-color: rgb(190, 205, 193);
+      }
+    }
+    
+  }
+  
+  @media (min-width: 601) and (max-width: 900px) { 
+
+    @keyframes animaTexto1{
+      0% {
+          transform: translateX(0px);
+      }/**estilos**/
+      100%{
+          transform: translateX(10px); 
+          background-color: rgb(190, 205, 193);
+      }
+    }
+    
+    .animaTexto2 {
+      animation-name: animaTexto2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes animaTexto2{
+      0% {
+          transform: translateX(0px);
+      }/**estilos**/
+      100%{
+          transform: translateX(10px); 
+          background-color: rgb(190, 205, 193);
+      }
+    }
+    
+  }
+  
+
+
+
+  .anima {
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: inherit;
+  }
+  
+  @keyframes animacion{
+    0% {
+        transform: translateX(1000px);
+    }/**estilos**/
+    40% {
+        transform: translateX(500px);
+        transform: rotate(90deg);
+        background-color: rgb(194, 203, 203);
+    }
+    100%{
+        transform: translateX(0); 
+        background-color: rgb(190, 205, 193);
+    }
+  }
+  
+  /***************ANIMACIONES_INDEX*******************************/
+  .imagesobre {
+    width: 50vw;
+    height: fit-content;
+    margin: 30px;
+    border-radius: 30px;
+  }
+  
+  .animaimageBottom {
+    animation-name: animaimageBottom;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animaimageBottom{
+    0% {
+        transform: translateY(100px);
+    }/**estilos**/
+    
+    100%{
+        transform: translateX(0); 
+        transform: skew(30px);
+    }
+  }
+  
+  .parrafoSobre {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  
+  .titleSobre {
+      padding-bottom: 10px;
+      padding-top: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  
+  /***************Contacto*******************************/
+  
+  .header {
+    color: #157347;
+    font-size: 27px;
+    padding: 10px;
+  }
+  
+  .bigicon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    color: #157347;
+  }
+  
+  .cartita {
+  
+  }
+  .cartita:hover {
+    transform: scale(110%);
+  }
+  
+  .titulito {
+    color: #203C2E;
+  }
+  
+  .titulito:hover{
+    transform: scale(120%);
+  }

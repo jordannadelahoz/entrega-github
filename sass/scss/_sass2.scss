@@ -1,0 +1,54 @@
+body {
+    width: calc($anchura * 2);
+}
+
+main{
+    width: $anchura;
+    section {
+        width: calc($anchura / 2);
+    }
+    #sectionDos{
+         width: calc(500px / 3);
+    }
+}
+
+.boton {
+    width: 230px;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+    border-radius: 20px;
+}
+
+.boton-azul {
+    @extend .boton;
+    background-color: bisque;
+}
+
+@mixin tamanio($anchurita, $alturita, $textoTamano) {
+    //fragmento que se imprime
+    width: $anchurita;
+    height: $alturita;
+    font-size: $textoTamano;
+
+
+}
+
+.caja {
+    @include tamanio( calc($anchurita*2),30vh, 3rem);
+}
+
+.caja-dos {
+    @include tamanio (300px, 50%, 4rem);
+}
+
+.caja-tres {
+    @include tamanio ( calc($anchurita/2), 30%, 2rem);
+}
+
+$mapita:(
+    nombre1: black,
+    nombre2: blue,
+    nombre3: yellow,
+);
+

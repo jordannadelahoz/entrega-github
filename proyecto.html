@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultora</title>
-
+    <title>Proyecto</title>
+    <meta name="description" content="Proyectos de diseño UI, UX, GRÁFICO">
     <!-- CSS BOOTSTRAP LOCAL los codigos de estilo de incluyen en el head -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="sass/css/destino.css">
 
 </head>
 <body>
+
+      <!-- Modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="h4 modal-title" id="exampleModalLabel">Título del modal</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt reprehenderit laudantium aut iste aliquid, ab minima sit doloremque quae maiores voluptatibus! Ut sequi repellat esse expedita a neque accusamus blanditiis.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg bg-light">
         <a class="navbar-brand px-2" href="index.html">Consultora Jordanna De La Hoz</a>
@@ -39,7 +58,7 @@
 
 
             <div class="container text-center">
-                <h1 class="h3 my-5">Proyectos</h1>
+                <h1 class="h3 my-5 titulito">Proyectos</h1>
                 <p class="justify-content-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere 
                     id voluptatibus omnis qui! Eum error neque minima earum assumenda 
                     est perspiciatis esse id, et commodi atque aliquam asperiores 
@@ -56,7 +75,9 @@
                     <div class="card-body">
                     <h5 class="card-title">UX</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="projectPages/UX.html" class="btn btn-primary">See more</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        Ver más
+                      </button>
                     </div>
                 </div>
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
@@ -64,7 +85,9 @@
                     <div class="card-body">
                     <h5 class="card-title">UI</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="projectPages/UI.html" class="btn btn-primary">See more</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        Ver más
+                    </button>
                     </div>
                 </div>
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
@@ -72,7 +95,9 @@
                     <div class="card-body">
                     <h5 class="card-title">Gráfico</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="projectPages/Grafico.html" class="btn btn-primary">See more</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        Ver más
+                    </button>
                     </div>
                 </div>
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
@@ -80,7 +105,9 @@
                     <div class="card-body">
                     <h5 class="card-title">3D</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="projectPages/Grafico.html" class="btn btn-primary">See more</a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            Ver más
+                        </button>
                     </div>
                 </div>
 

@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Diseño, maquetas, prototipos , diseño de aplicaciones, UX, UI, Chile">
     <title>Consultora</title>
-
+    <meta name="description" content="Index consultora">
     <!-- CSS BOOTSTRAP LOCAL los codigos de estilo de incluyen en el head -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="sass/css/destino.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Noto+Serif:400,700">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="h4 modal-title" id="exampleModalLabel">Título del modal</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aspernatur ut commodi necessitatibus, dolorum tenetur iusto voluptatibus. Repudiandae quasi maxime alias voluptas incidunt nulla reiciendis, deserunt quibusdam iusto fuga aspernatur?
+             </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg bg-light">
         <a class="navbar-brand px-2" href="index.html">Consultora Jordanna De La Hoz</a>
@@ -37,17 +61,13 @@
 
     <header class="container-fluid">
         <div class="col-lg-12">
-            <div class="row titulo_header">
+            <div class="row titulo_header col-mr-5">
                 <div class="texto1 animaTexto1">Diseñando</div>
                 <div class="texto2 animaTexto2">Estratégicamente</div>
             </div>
             <img src="img/plants.jpg" class="img-fluid" alt="Main background">
-            
         </div>
     </header>
-
-
-    
 
     <main class="container">
 
@@ -55,7 +75,7 @@
 
         <section class="container-fluid text-center">
             <div>
-                <h1 class="h3 my-5 titulito">Servicios</h1>
+                <h2 class="h3 my-5 titulito">Servicios</h2>
                     <div class="row">
                       <div class="col-md-6 col-lg-4 columnService cartita">
                         <div class="cardService gr-1">
@@ -63,33 +83,39 @@
                             <h1>Branding and Corporate design</h1>
                             <p>Visual communication and problem-solving</p>
                           </div>
-                          <a href="#">more</a>
+                          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            More
+                          </button>
                           
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-4 columnService cartita">
                         <div class="cardService gr-2">
                           <div class="txt">
-                            <h1>Design Web Front-End Solutions </h1>
+                            <h2 class="h3">Design Web Front-End Solutions </h2>
                             <p>How design is implemented on the web.</p>
                           </div>
-                          <a href="#">more</a>
+                          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            More
+                          </button>
                         
                         </div>
                       </div>
                       <div class="col-md-6 col-lg-4 columnService cartita">
                         <div class="cardService gr-3">
                           <div class="txt">
-                            <h1>UX/UI Website and Mobile app</h1>
+                            <h2 class="h3">UX/UI Website and Mobile app</h2>
                             <p>User Interface and User Experience Design.</p>
                           </div>
-                          <a href="#">more</a>
+                          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
+                            More
+                          </button>
                         </div>
                       </div>
                     </div>
             </div>
             <div>
-                <h1 class="h3 my-5 titulito">Methology</h1>
+                <h2 class="h3 my-5 titulito">Methology</h2>
                 <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere 
                     id voluptatibus omnis qui! Eum error neque minima earum assumenda 
                     est perspiciatis esse id, et commodi atque aliquam asperiores 
@@ -104,31 +130,31 @@
             <div class="container row justify-content-center">
 
                 <article class="col-md-2 mx-2 my-4 col-12 cartita">
-                    <h4 class="text-center">Empatizar</h4>
+                    <h3 class="h4 text-center">Empatizar</h3>
                     <img src="https://placeimg.com/200/300/nature" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </article>
 
                 <article class="col-md-2 mx-2 my-4 col-12 cartita">
-                    <h4 class="text-center">Idear</h4>
+                    <h3 class="h4 text-center">Idear</h3>
                     <img src="https://placeimg.com/200/300/nature" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </article>
 
                 <article class="col-md-2 mx-2 my-4 col-12 cartita">
-                    <h4 class="text-center">Maquetear</h4>
+                    <h3 class="h4 text-center">Maquetear</h3>
                     <img src="https://placeimg.com/200/300/nature" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </article>
 
                 <article class="col-md-2 mx-2 my-4 col-12 cartita">
-                    <h4 class="text-center">Testear</h4>
+                    <h3 class="h4 text-center">Testear</h3>
                     <img src="https://placeimg.com/200/300/nature" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </article>
 
                 <article class="col-md-2 mx-2 my-4 col-12 cartita">
-                    <h4 class="text-center">Implementar</h4>
+                    <h3 class="h4 text-center">Implementar</h3>
                     <img src="https://placeimg.com/200/300/nature" alt="">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </article>
@@ -138,9 +164,7 @@
     
         </section>
 
-        
-        <!--SCRIPTS SE PONEN AL FINAL-->
-    <script src="js/bootstrap.js"></script>
+   
     
     </main>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
@@ -150,7 +174,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7">
                             <div class="cta_content">
-                                <h3>Do you have any project in Mind?</h3>
+                                <h4 class="h3">Do you have any project in Mind?</h4>
                                 <p>Having trouble knowing how to get started? You don't know how to lead your idea?</p>
                             </div>
                         </div>
@@ -244,6 +268,9 @@
             </div>
     </footer>
      
-
+         
+        <!--SCRIPTS SE PONEN AL FINAL-->
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>
