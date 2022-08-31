@@ -1,5 +1,35 @@
-$coloresMipagina:(
-    tituloprincipal: rgb(33, 210, 80),
-    subtitulos: rgb(67, 162, 100),
-    parrafos: rgb(15, 64, 46),
+$anchura: 100vh;
+
+
+$align: (
+    property: vertical-align,
+    class: align,
+    values: baseline top middle bottom text-bottom text-top
 );
+
+
+
+@mixin modeloSection($anchura, $altura, $textoTamano) {
+    //fragmento que se imprime
+    width: $anchurita;
+    height: $altura;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc($anchurita/3);
+};
+
+
+
+$mapgradient: (
+    1: linear-gradient(170deg, #f2e7c3 0%, #fff 100%),
+    2: linear-gradient(170deg, #cdf0a1 0%, #fff 100%),
+    3: linear-gradient(170deg, #8bbb75 0%, #fff 100%),
+
+);
+
+@each $nombre, $colorgrad in $mapgradient {
+    //bloqueQueQuieroQueRepita 
+    .grad-#{$nombre}{
+        background: $colorgrad;
+        color: rgb(2, 3, 3);
+    }
+}
