@@ -23,7 +23,7 @@
     font-size: 5vw;
     padding: 0px 10px 0px 40px;
     margin-left: 100px;
-    background-color:rgba(220, 53, 69, 0.25);
+    background: rgba(220, 53, 69, 0.25);
     color: #203C2E;
   }
   
@@ -165,26 +165,25 @@
   
   /***************ANIMACIONES_INDEX*******************************/
   .imagesobre {
-    width: 50vw;
-    height: fit-content;
+    height: 100vh;
+    width: 100vw;
     margin: 30px;
     border-radius: 30px;
   }
   
   .animaimageBottom {
     animation-name: animaimageBottom;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count:initial;
   }
   
   @keyframes animaimageBottom{
     0% {
-        transform: translateY(100px);
+        transform: translateX(-100px);
     }/**estilos**/
     
     100%{
         transform: translateX(0); 
-        transform: skew(30px);
     }
   }
   
@@ -218,9 +217,17 @@
     color: #157347;
   }
   
-  .cartita {
-  
+  .cartita{
+    color: #203C2E;
   }
+  .cartita--new{
+    @extend .cartita;
+    border-radius:20px;
+    color: #ede3c5;
+    background: #203C2E;
+    padding-top: 10px;
+  }
+
   .cartita:hover {
     transform: scale(110%);
   }
@@ -232,3 +239,15 @@
   .titulito:hover{
     transform: scale(120%);
   }
+
+  .content_title{
+    color:#D2E0C8;
+  }
+
+  .cta_content h3{
+    color: white;
+  }
+
+.modal-body img {
+  margin-bottom: 50px;
+}
