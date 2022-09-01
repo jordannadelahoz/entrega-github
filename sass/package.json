@@ -1,11 +1,11 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consultancy Design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sass --watch scss/origen.scss css/destino.css"
   },
-  "author": "",
+  "author": "Jordanna de la hoz",
   "license": "ISC"
 }

@@ -3632,7 +3632,7 @@ textarea.form-control-lg {
 }
 
 .nav {
-  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
@@ -3645,7 +3645,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 
-.nav-link {
+.-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
@@ -3816,6 +3816,7 @@ textarea.form-control-lg {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
+  text-align: center;
   list-style: none;
 }
 .navbar-nav .show > .nav-link,
@@ -3824,9 +3825,11 @@ textarea.form-control-lg {
 }
 .navbar-nav .dropdown-menu {
   position: static;
+  padding-left: 30px;
 }
 
 .navbar-text {
+  padding-left: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: var(--bs-navbar-color);
@@ -3903,6 +3906,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
+    align-items: center;
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
@@ -3930,6 +3934,55 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+  }
+  .navbar-expand-sm .navbar-nav-scroll {
+    overflow: visible;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-md .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    transform: none !important;
+    transition: none;
+  }
+  .navbar-expand-md .offcanvas .offcanvas-header {
+    display: none;
+  }
+  .navbar-expand-md .offcanvas .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
@@ -4137,6 +4190,7 @@ textarea.form-control-lg {
 }
 .navbar-expand .navbar-collapse {
   display: flex !important;
+  justify-content: center;
   flex-basis: auto;
 }
 .navbar-expand .navbar-toggler {

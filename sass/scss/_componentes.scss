@@ -1,4 +1,6 @@
 
+/*--------------MODULE CONTACT------------------*/
+
 .deneb_footer .widget_wrapper {
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,7 +170,7 @@
     box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*--------------------------------------------*/
+/*-----------------Servicios y Contactos----------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
 
@@ -194,19 +196,16 @@
 
 
 #titleSobre{
-  color: #ffbd27;
-}
-
-#titleSobre:hover {
-    transform: scale(120%);
+  color: #0ac150;
 }
 
 
+/*-----------------MENU BARRA COLOR----------------*/
 @mixin menu_barra ($colorinche, $espaciado) {
     color: $colorinche;
     padding-right: $espaciado;
 }
-    
+  
 .menuSobre {
     @include menu_barra(rgb(8, 191, 54), 25px)
 }

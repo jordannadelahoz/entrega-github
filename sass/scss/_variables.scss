@@ -1,12 +1,10 @@
 $anchura: 100vh;
 
-
 $align: (
     property: vertical-align,
     class: align,
     values: baseline top middle bottom text-bottom text-top
 );
-
 
 
 @mixin modeloSection($anchura, $altura, $textoTamano) {
@@ -17,7 +15,7 @@ $align: (
     font-size: calc($anchurita/3);
 };
 
-
+  /**********************SERVICIOS***********************/
 
 $mapgradient: (
     1: linear-gradient(170deg, #f2e7c3 0%, #fff 100%),
