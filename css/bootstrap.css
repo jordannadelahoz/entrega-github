@@ -3815,6 +3815,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  text-align: center;
   margin-bottom: 0;
   list-style: none;
 }
