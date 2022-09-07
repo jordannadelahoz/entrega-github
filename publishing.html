@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Diseño, Design, mockups, maquetas, prototipos, prototypes, diseño de aplicaciones, UX design , UI, Chile, Graphic design, Viña del mar">
     <meta name="description" content="This website is about design consulting, where I can guide you and create a design project from scratch.">
-    <title>Project</title>
-    <meta name="description" content="Proyectos de diseño UI, UX, GRÁFICO">
+    <link rel="shortcut icon" type="img/favicon.png" href="img/favicon.png"/>
+    <title>Publishing</title>
     <!-- CSS BOOTSTRAP LOCAL los codigos de estilo de incluyen en el head -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="sass/css/destino.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Noto+Serif:400,700">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -123,11 +126,11 @@
                     <a class="nav-link" href="sobre.html">About me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menuProject" href="proyecto.html">Projects</a>
+                    <a class="nav-link" href="proyecto.html">Projects</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="publishing.html">Publishing</a>
+                    <a class="nav-link menuProject" href="publishing.html">Publishing</a>
                 </li>
 
                 <li class="nav-item">
@@ -136,58 +139,73 @@
             </ul>
         </div>
     </nav>
-     <!--Projects-->
+     <!--Published-->
     <main class="container-fluid">
+            <!--title-->
             <div class="container text-center">
-                <h1 class="h3 my-5 titulito">Projects</h1>
-                <p class="justify-content-center"> The design projects are focused on the resolution and physical or digital delivery of the requirement, starting from the conceptualization and understanding of the user. In such a way that the deliverables can deliver a permanent resolution to a problem that you have brought to the consultant. It is part of my responsibility to deliver a document with all the deliverables previously discussed and paid for.</p>
-                <p class="by-5 justify-content-center"> On this occasion you can review a pull of requirements that I have worked on previously.</p>
+                <h1 class="h3 my-5 titulito">Publishing</h1>
+                <p class="by-5 justify-content-center"> The design projects are focused on the resolution and physical or digital delivery of the requirement, starting from the conceptualization and understanding of the user. In such a way that the deliverables can deliver a permanent resolution to a problem that you have brought to the consultant. It is part of my responsibility to deliver a document with all the deliverables previously discussed and paid for.</p>
             </div>
+            <br>
+            <!--Barra-->
+            <section class="container-fluid mb-3">
+                <div class="container">
+                    <h2 class="h6 text-center">Percentaje of my passion</h2>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:60%">
+                        60% Design
+                        </div>
+                        <div class="progress-bar bg-warning" style="width:30%">
+                        30% Photography
+                        </div>
+                        <div class="progress-bar bg-danger" style="width:20%">
+                        20% Podcast
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!--Publicaciones-->
             <div class="row p-5 justify-content-center">
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
-                    <img src="img/theclinic.png" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <img src="img/2d.png" class="card-img-top" alt="...">
+                    <div class="card-body align-items-end">
                         <div>
-                            <h5 class="card-title">UX</h5>
-                            <p class="card-text">To create the user experience I focus on the user flow, emphaty map and road map. </p>
+                            <h5 class="card-title">IID</h5>
+                            <p class="card-text">Podcast that deals with concepts about UX Design and Compliance in Law and technology. Follow us on Instagram @2dtechpodcast. </p>
                         </div>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal1">
-                            See more
-                        </button>
+                        <br>
+                        <input type="button" class="btn btn-success" onclick="location.href='https://www.instagram.com/2dtechpodcast/';" value="See more">
+                        </input>    
                     </div>
                 </div>
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
-                    <img src="img/tundra.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">UI</h5>
-                        <p class="card-text">I was focus to develop the mockups in Low, Medium and High cuality. Also I follow the Atom Design System to implement in the mockups.</p>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal2">
-                            See more
-                        </button>
+                    <img src="img/photography.png" class="card-img-top" alt="...">
+                    <div class="card-body align-items-end">
+                        <div>
+                            <h5 class="card-title">Photography</h5>
+                            <p class="card-text">This is one of my passions in life, taking pictures from nature and animals. Also I love traveling and see more places.</p>
+                        </div>
+                        <br>
+                        <input type="button" class="btn btn-success" onclick="location.href='https://www.flickr.com/photos/104981473@N04/';" value="See more">
+                        </input>
                     </div>
                 </div>
                 <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
-                    <img src="img/fotografia.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphic</h5>
-                        <p class="card-text">UX an UI can't be separated from Graphic Design, so It's a huge part of the design process. I love how Branding brings life to everything.</p>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal3">
-                            See more
-                        </button>
-                    </div>
-                </div>
-                <div class="card mx-2 my-2 cartita" style="width: 18rem; padding-left: 0px; padding-right: 0px;">
-                    <img src="img/3d.png" class="card-img-top" alt="...">
-                    <div class="card-body align-bottom">
-                        <h5 class="card-title">Prototype</h5>
-                        <p class="card-text">This prototype is related to all my physical work, you will find a mix of things: 3D, Print, Cooked, Embroidery... </p>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Modal4">
-                            See more
-                        </button>
+                    <img src="img/itero.png" class="card-img-top" alt="...">
+                    <div class="card-body align-items-end">
+                        <div>
+                            <h5 class="card-title">Itero</h5>
+                            <p class="card-text">This platform helps to students in their design degree gained a quicly feedback and accompaniment to their entire university.</p>
+                        </div>
+                        <br>
+                        <input type="button" class="btn btn-success" onclick="location.href='https://theindexproject.org/award/nominees/5854';" value="See more">
+                        </input>
                     </div>
                 </div>
             </div>
     </main>
+    
+
     <!-- MODULE Contact -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
         <section class="deneb_cta cartita">
@@ -269,7 +287,7 @@
                                             <i class="fas fa-map-marker-alt"></i>
                                         </div>
                                         <div class="info">
-                                            <p>Santiago de <span>Chile</span></p><p>Santiago de <span>Chile</span></p>
+                                            <p>Santiago de <span>Chile</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -291,6 +309,7 @@
             </div>
     </footer>
     <!--SCRIPTS SE PONEN AL FINAL-->
-   <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
